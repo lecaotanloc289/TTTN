@@ -39,18 +39,18 @@ router.post('/', async (req, res) => {
     // Kiểm tra xem email đã tồn tại trong cơ sở dữ liệu hay chưa
     const existingUser = await User.findOne({ email: req.body.email })
     if (existingUser) {
-        return res.status(400).send('Email already exists!')
+        return res.status(400).json('Email already exists!')
     }
 
     if (!req.body.password_hash) {
         return res
             .status(400)
-            .send('Bad Request: req.body.password_hash is missing.')
+            .json('Bad Request: req.body.password_hash is missing.')
     }
     if (typeof req.body.password_hash === 'undefined') {
         return res
             .status(400)
-            .send('Bad Request: req.body.password_hash is undefined.')
+            .json('Bad Request: req.body.password_hash is undefined.')
     }
 
     let user = new User(

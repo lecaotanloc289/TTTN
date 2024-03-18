@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/otpScreen.dart';
 import 'package:elma/screens/recoveryScreen.dart';
 import 'package:flutter/cupertino.dart';

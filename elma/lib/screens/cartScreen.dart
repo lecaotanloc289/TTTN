@@ -1,5 +1,4 @@
-import 'package:elma/constant.dart';
-import 'package:elma/models/category.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/paymentMethod.dart';
 import 'package:elma/widgets/container_button_model.dart';
 import 'package:flutter/material.dart';

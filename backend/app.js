@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
-const bodyParser = require('body-parser') // sử dụng để chuyển dữ liệu nhận được => Json
-const morgan = require('morgan') // ghi nhật ký các yêu cầu http từ UI
-// mongoose - thư viện kết nối mongodb
+// sử dụng để chuyển dữ liệu nhận được => Json
+const bodyParser = require('body-parser')
+
+// ghi nhật ký các yêu cầu http từ UI
+const morgan = require('morgan') 
 const mongoose = require('mongoose')
 const cors = require('cors')
+
 // Lỗi không sử dụng được
 // const authJwt = require('./helper/jwt')
 // const error_handler = require('./helper/error-handler').default

@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/orderConfirm.dart';
 import 'package:flutter/material.dart';
 

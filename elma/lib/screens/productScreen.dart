@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/cartScreen.dart';
 import 'package:elma/widgets/container_button_model.dart';
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';

@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "backend"
+	},
+	{
+		"path": "frontend"
+	},
+	{
+		"path": "admin"
+	},
+	{
+		"path": "elma"
+	}
+],
+  "settings": {}
+}

@@ -1,17 +1,29 @@
 class Category {
-  final String title;
-  final String image;
+  String? title;
+  String? image;
+  String? icon;
 
-  Category({
-    required this.title,
-    required this.image,
-  });
+  Category(this.title, this.image, this.icon);
+  factory Category.fromJson(Map<String, dynamic> json) {
+    return Category(json['title'], json['image'], json['icon']);
+  }
 }
 
 final List<Category> categories = [
-  Category(title: "Mobile", image: "images/Ip15.jpg"),
-  Category(title: "Laptop", image: "images/lapdell.jpg"),
-  Category(title: "PC", image: "images/pc.jpg"),
-  Category(title: "Air", image: "images/Sony.jpg"),
-  Category(title: "Watch", image: "images/watch.jpg"),
+  Category("Mobile", "images/Ip15.jpg", ""),
+  Category("Laptop", "images/lapdell.jpg", ""),
+  Category("PC", "images/pc.jpg", ""),
+  Category("Air", "images/Sony.jpg", ""),
+  Category("Watch", "images/watch.jpg", ""),
 ];
+
+class Categories {
+  String? _id;
+  String? name;
+  String? icon;
+
+  Categories(this._id, this.name, this.icon);
+  factory Categories.fromJson(Map<String, dynamic> json) {
+    return Categories(json['_id'], json['name'], json['icon']);
+  }
+}

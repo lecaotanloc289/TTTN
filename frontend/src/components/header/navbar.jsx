@@ -3,6 +3,7 @@ import "./navbar.scss";
 import logo from "../../assets/logo";
 import icons from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 function SocialMedia() {
     return (
         <div className="icon-glyph">
@@ -24,6 +25,11 @@ function SocialMedia() {
 
 function Tools() {
     const navigate = useNavigate();
+    const [age, setAge] = React.useState("");
+
+    const handleChange = (event) => {
+        setAge(event.target.value);
+    };
 
     return (
         <tr className="tools-support">
@@ -36,10 +42,11 @@ function Tools() {
             <a href="#">
                 <p className="h7 regular">Help</p>
             </a>
+
             <div className="flex-row">
-                <img className="image-language" src={logo.US} alt="" />
-                <p className="h7 regular black">English(US)</p>
-                <img src={icons.Chevron_down} alt="" />
+                <img className="image-language" src={logo.Vietnam} alt="" />
+                <p className="h7 regular black">Vietnam</p>
+                {/* <img src={icons.Chevron_down} alt="" /> */}
             </div>
         </tr>
     );

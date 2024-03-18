@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/models/category.dart';
 import 'package:elma/screens/allProductsScreen.dart';
 import 'package:flutter/material.dart';
@@ -109,7 +109,7 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
                           )
                         ],
                         image: DecorationImage(
-                          image: AssetImage(categories[index].image),
+                          image: AssetImage(categories[index].image!),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -131,7 +131,7 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8),
                                 child: Text(
-                                  categories[index].title,
+                                  categories[index].title!,
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,

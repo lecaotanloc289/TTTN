@@ -7,8 +7,14 @@ const router = express.Router()
 // get all order
 router.get(`/`, async (req, res) => {
     const order_list = await Order.find()
-        .populate('user orderItems')
-        .sort('dateOrdered: -1')
+        .populate('user', ['name', 'street', 'city', 'country', 'phone'])
+        .populate({
+            path: 'orderItems',
+            populate: {
+                path: 'product',
+            },
+        })
+        .sort({ dateOrdered: -1 })
     if (!order_list) res.status(500).json({ success: false })
     res.send(order_list)
 })
@@ -23,7 +29,8 @@ router.get(`/:id`, async (req, res) => {
             populate: {
                 path: 'product',
             },
-        }).sort('dateOrdered: -1')
+        })
+        .sort({ dateOrdered: -1 })
 
     if (!order) res.status(500).json({ success: false })
     res.send(order)

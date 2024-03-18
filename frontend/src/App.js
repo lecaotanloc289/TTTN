@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/footer"; // Đảm bảo đúng đường dẫn
 import SignIn from "./components/signin/SignIn";
 import Register from "./components/register/Register";
 import Categories from "./components/categories/Categories";
@@ -16,7 +14,6 @@ import store from "./redux/store";
 import Favorites from "./components/favorite/Favorites";
 import User from "./components/user/User";
 import PageNotFound from "./components/404PageNotFound";
-
 function App() {
     return (
         <Provider store={store}>

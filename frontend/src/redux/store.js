@@ -12,6 +12,7 @@ import {
     shippingPaymentReducer,
 } from "./reducers/cartReducer";
 import { loadState, saveState } from "./storeState";
+
 const loadElmaState = loadState();
 const rootReducer = combineReducers({
     favorite: favoriteReducer,
@@ -21,7 +22,7 @@ const rootReducer = combineReducers({
     cart: cartReducer,
     notes: notesReducer,
     shippingPayment: shippingPaymentReducer,
-    // Thêm reducer khác nếu cần
+    // add more readucer
 });
 const store = createStore(rootReducer, loadElmaState, applyMiddleware(thunk));
 

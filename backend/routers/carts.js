@@ -2,15 +2,11 @@ const { Cart } = require('../models/cart')
 const express = require('express')
 const router = express.Router()
 
-// Lấy giỏ hàng của người dùng
+// get user's cart by user id
 router.get('/:userId', async (req, res) => {
     const { userId } = req.params
     try {
         const cart = await Cart.findById(userId)
-            // .populate({
-            //     path: '_id',
-            //     model: 'User',
-            // })
             .populate({
                 path: 'products.productId',
                 model: 'Product',
@@ -21,9 +17,7 @@ router.get('/:userId', async (req, res) => {
     }
 })
 
-//  okey nè http://localhost:2000/api/v1/carts/65c2091dc3e076cc6ae53dc2
-
-// Thêm sản phẩm vào giỏ hàng nếu không có thì tạo mới
+// add to cart | create new if it not exist
 router.post('/add', async (req, res) => {
     const userId = req.body.userId
     const productId = req.body.productId

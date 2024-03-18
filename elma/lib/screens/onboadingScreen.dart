@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/homeScreen.dart';
 import 'package:elma/screens/login.dart';
 import 'package:flutter/material.dart';

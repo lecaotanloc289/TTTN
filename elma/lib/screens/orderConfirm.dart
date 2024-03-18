@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/orderSuccess.dart';
 import 'package:elma/screens/paymentMethod.dart';
 import 'package:elma/screens/shippingAddress.dart';

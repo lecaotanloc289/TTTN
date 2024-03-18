@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/shippingAddress.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -289,7 +289,6 @@ class _PaymentMethodState extends State<PaymentMethod> {
                     )
                   ],
                 ),
-                
                 SizedBox(
                   height: 20,
                 ),

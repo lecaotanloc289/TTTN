@@ -1,5 +1,5 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/cartScreen.dart';
 import 'package:elma/screens/favoriteScreen.dart';
 import 'package:elma/screens/homeScreen.dart';

@@ -36,11 +36,11 @@ export default function Review({ handleBack, allStepCompleted, handleNext }) {
 
     let userId;
     if (userData) userId = userData.id;
-    console.log(userData);
-    console.log(products);
-    console.log(shipping);
-    console.log(payment);
-    console.log(note);
+    // console.log(userData);
+    // console.log(products);
+    // console.log(shipping);
+    // console.log(payment);
+    // console.log(note);
 
     useEffect(() => {
         window.scrollTo(0, 0);

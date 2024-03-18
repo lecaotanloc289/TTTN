@@ -1,4 +1,4 @@
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/login.dart';
 import 'package:elma/screens/onboadingScreen.dart';
 import 'package:elma/screens/signup.dart';

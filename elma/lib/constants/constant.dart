@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-
+const url = 'http://10.80.0.109:2000/api/v1';
 const kPrimaryColor = Color(0xFF5C6AC4);
 const kAccentColor = Color(0xFFF1F1F1);
 const kWhiteColor = Color(0xFFFFFFFF);

@@ -1,6 +1,6 @@
 import 'dart:core';
 
-import 'package:elma/constant.dart';
+import 'package:elma/constants/constant.dart';
 import 'package:elma/screens/allCategoryScreen.dart';
 import 'package:elma/screens/bannerScreen.dart';
 import 'package:elma/screens/categoriesScreen.dart';

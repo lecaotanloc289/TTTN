@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-
 const cartSchema = new mongoose.Schema(
     {
         userId: {
@@ -21,5 +20,4 @@ const cartSchema = new mongoose.Schema(
         ],
     }
 )
-
 exports.Cart = mongoose.model('Cart', cartSchema)

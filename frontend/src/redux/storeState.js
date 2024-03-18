@@ -16,7 +16,7 @@ export const loadState = () => {
 export const saveState = (state) => {
     try {
         const serializedState = JSON.stringify(state);
-        localStorage.setItem('elmaEcommerce', serializedState);
+        localStorage.setItem(LOCAL_STORAGE_KEY, serializedState);
     } catch (err) {
         console.error("Error saving state to localStorage:", err);
     }
